@@ -1,0 +1,22 @@
+@prefix rdf: <http: www.w3.org 1999 02 22-rdf-syntax-ns#> .
+@prefix voc: <http: www.souad.fr voc#>.
+@prefix xsd: <http: www.w3.org 2001 XMLSchema#>. 
+
+<http: www.souad.fr donnée#Margot> a voc: enseignante, voc:femme; 
+    voc : name "Margot"; 
+    voc : age "32"^^xsd: string; 
+    voc : enfant  <http: www.souad.fr donnée#Marie>,
+                  <http: www.souad.fr donnée#Simon>; 
+    voc : marie <http: www.souad.fr donnée#Arthur>;
+    voc : collegue <http: www.souad.fr donnée#Pierre>;
+    <http: www.souad.fr donnée#Alice>;
+    voc : maman <http: www.souad.fr donnée#Simone>.
+
+<http: www.souad.fr donnée#Arthur> a voc : homme; 
+    voc: enfants <http: www.souad.fr donnée#Marie>,
+                 <http: www.souad.fr donnée#Simon>; 
+    voc: name "Arthur". 
+<http: www.souad.fr donnée#Marie> a voc : femme; 
+    voc : name "Marie". 
+<http: www.souad.fr donnée#Simon> a voc : homme; 
+    voc : name "Simon". 
