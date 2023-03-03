@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:voc="http://www.souad.fr/voc#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+  <rdf:Description rdf:about="http://www.souad.fr/donnée#Margot">
+    <voc:enseignante />
+    <voc:femme />
+    <voc:nom>Margot</voc:nom>
+    <voc:age rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32</voc:age>
+    <voc:enfant rdf:resource="http://www.souad.fr/donnée#Marie" />
+    <voc:enfant rdf:resource="http://www.souad.fr/donnée#Simon" />
+    <voc:marie rdf:resource="http://www.souad.fr/donnée#Arthur" />
+    <voc:collègue rdf:resource="http://www.souad.fr/donnée#Pierre" />
+    <rdf:li rdf:resource="http://www.souad.fr/donnée#Alice" />
+    <voc:maman rdf:resource="http://www.souad.fr/donnée#Simone" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.souad.fr/donnée#Arthur">
+    <voc:homme />
+    <voc:enfants rdf:resource="http://www.souad.fr/donnée#Marie" />
+    <voc:enfants rdf:resource="http://www.souad.fr/donnée#Simon" />
+    <voc:nom>Arthur</voc:nom>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.souad.fr/donnée#Marie">
+    <voc:femme />
+    <voc:nom>Marie</voc:nom>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.souad.fr/donnée#Simon">
+    <voc:homme />
+    <voc:nom>Simon</voc:nom>
+  </rdf:Description>
+
+</rdf:RDF>
