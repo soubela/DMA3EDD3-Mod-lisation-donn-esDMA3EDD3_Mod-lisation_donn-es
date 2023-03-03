@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [
+    <!ENTITY vocabulaire "http://www.souad.fr/voc">
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+    
+    
+    <!ENTITY femme "http://www.souad.fr/voc#femme">
+    <!ENTITY Homme "http://www.souad.fr/voc#Homme">
+    <!ENTITY enseignante "http://www.souad.fr/voc#enseignante">
+    
+    
+    <!ENTITY nom "http://www.souad.fr/voc#nom">
+    <!ENTITY age "http://www.souad.fr/voc#age">
+    <!ENTITY pantalon "http://www.souad.fr/voc#pantalon">
+    <!ENTITY chaussure "http://www.souad.fr/voc#chaussure">
+    <!ENTITY se_marier "http://www.souad.fr/voc#se_marier">
+    <!ENTITY maman "http://www.souad.fr/voc#maman">
+    <!ENTITY enfant "http://www.souad.fr/voc#enfant">
+    <!ENTITY collegue "http://www.souad.fr/voc#collegue">
+    
+]>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:voc="&vocabulaire;#" xml:base="http://www.souad.fr/data">
+
+    <rdf:Description rdf:about="&femme;">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:label>femme</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="&femme;">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:label>Simone</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="&femme;">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:label>Marie</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="&femme;">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:label>Alice</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="&Homme;">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:label>Homme</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="&Homme;">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:label>Arthur</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="&Homme;">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:label>Simon</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="&Homme;">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:label>Pierre</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="&enseignante;">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:label>Enseignante</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="&nom;">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:label>Margot</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="&age;">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:label>32</rdfs:label>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="&pentalon;">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:label>38</rdfs:label>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="chaussure;">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:label>40</rdfs:label>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </rdf:Description>
+
