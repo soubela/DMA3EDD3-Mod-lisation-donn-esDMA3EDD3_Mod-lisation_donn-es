@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [
+    <!ENTITY vocabulaire "http://www.souad.fr/voc">
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:voc="&vocabulaire;#" xml:base="http://www.souad.fr/data">
+    <voc:femme rdf:about="#Margot">
+        <voc:nom>Margot</voc:nom>
+        <voc:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</voc:age>
+        <voc:pantalon rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</voc:age>
+        <voc:chaussure rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</voc:age>
+        
+        <voc:se marier rdf:resource="#Arthur"></voc:se marier>
+        <voc:maman rdf:resource="#Simone"></voc:maman>
+        <voc:enfant rdf:resource="#Simon"></voc:enfant>
+
+        <voc:enfant>
+            <rdf:Description rdf:about="#Marie">
+                <voc:nom>Marie</voc:nom>
+                <rdf:type rdf:resource="&vocabulaire;#femme"></rdf:type>
+            </rdf:Description>
+        </voc:enfant>
+
+        <rdf:type rdf:resource="&vocabulaire;#enseignante"></rdf:type>
+
+        <voc:collegue rdf:resource="#Pierre"></voc:collegue>
+        <voc:collegue>
+            <rdf:Description rdf:about="#Alice">
+                <voc:nom>Alice</voc:nom>
+                <rdf:type rdf:resource="&vocabulaire;#femme"></rdf:type>
+            </rdf:Description>
+        </voc:collegue>
+
+    </voc:femme>
+
+    <voc:Homme rdf:about="#Arthur">
+        <voc:nom>Arthur</voc:nom >
+        <voc:enfant rdf:resource="#Simon"></voc:enfant>
+        <voc:enfant rdf:resource="#Marie"></voc:enfant>
+    </voc:Homme>
+
+    <voc:Homme rdf:about="#Simon">
+        <voc:nom>Simon</voc:nom>
+    </voc:Homme>
+
+    <voc:Homme rdf:about="#Pierre">
+        <voc:nom>Pierre</voc:nom>
+    </voc:Homme>
+
+    <voc:femme rdf:about="#Simone">
+        <voc:nom>Simone</voc:nom>
+    </voc:femme>
+
+</rdf:RDF>
